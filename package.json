@@ -1,0 +1,37 @@
+{
+  "name": "indoqa-react-i18n",
+  "version": "0.0.1",
+  "description": "Simple and easy i18n solution",
+  "main": "./dist/IndoqaReactI18n.min.js",
+  "scripts": {
+    "start": "node ./src/dev/server.js",
+    "dist": "indoqa-webpack ./indoqa-webpack-options.js",
+    "prepublish": "npm run dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Indoqa/indoqa-react-i18n.git"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "translation",
+    "language",
+    "react"
+  ],
+  "author": "Indoqa Software Design und Beratung GmbH (https://www.indoqa.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Indoqa/indoqa-react-i18n/issues"
+  },
+  "homepage": "https://github.com/Indoqa/indoqa-react-i18n#readme",
+  "peerDependencies": {
+  },
+  "dependencies": {
+    "moment": "^2.13.0"
+  },
+  "devDependencies": {
+    "indoqa-webpack": "^0.6.5"
+  }
+}
