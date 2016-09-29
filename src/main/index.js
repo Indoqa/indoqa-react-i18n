@@ -1,7 +1,7 @@
-import moment from 'moment'
-
 const availableLocales = []
 const allTranslations = {}
+
+let locale = 'en'
 
 export const addAvailableLocale = (value) => {
   availableLocales.push(value)
@@ -9,9 +9,7 @@ export const addAvailableLocale = (value) => {
 
 export const setLocale = (value) => {
   if (availableLocales.includes(value)) {
-    moment.locale(value)
-  } else {
-    setLocale(availableLocales[0])
+    locale = value
   }
 }
 
@@ -32,7 +30,7 @@ export const register = (name, translations) => {
 }
 
 const getLanguageKey = (key) => {
-  return [...key, moment.locale()]
+  return [...key, locale]
 }
 
 const translate = (key, ...parameters) => {

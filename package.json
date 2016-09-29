@@ -1,6 +1,6 @@
 {
   "name": "indoqa-react-i18n",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple and easy i18n solution",
   "main": "./dist/IndoqaReactI18n.min.js",
   "scripts": {
@@ -32,7 +32,6 @@
   "peerDependencies": {
   },
   "dependencies": {
-    "moment": "^2.13.0"
   },
   "devDependencies": {
     "indoqa-webpack": "^0.6.5"
