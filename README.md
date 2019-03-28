@@ -1,1 +1,1 @@
-"# indoqa-react-i18n" 
+This repository has been deprecated.
